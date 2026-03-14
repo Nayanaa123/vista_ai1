@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vista AI - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>Your AI Summary</h2>
+        <div id="summary-content" style="text-align: left; color: #a8dadc; max-height: 400px; overflow-y: auto; padding: 10px; border: 1px solid #457b9d; border-radius: 5px;">
+            {% if is_points %}
+                <ul style="padding-left: 20px;">
+                    {% for line in summary %}
+                        <li style="margin-bottom: 10px;">{{ line }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>{{ summary[0] }}</p>
+            {% endif %}
+        </div>
+        <br>
+        
+        <button onclick="downloadAsTxt()" style="background-color: #1d3557; margin-bottom: 10px; width: 100%;">Download Summary (.txt)</button>
+        
+        <button onclick="window.location.href='/summarize'" style="width: 100%;">Summarize Another</button>
+        <br><br>
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+
+    <script>
+        function downloadAsTxt() {
+            const content = document.getElementById('summary-content').innerText;
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Vista_AI_Summary.txt';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>

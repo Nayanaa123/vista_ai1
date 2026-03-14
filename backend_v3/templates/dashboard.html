@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vista AI - Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="card">
+<h2>Welcome {{ session['user'] }} 👋</h2>
+<p>Your Smart YouTube AI Assistant</p>
+<button onclick="window.location.href='/summarize'">Start Summarizing</button>
+<a href="/logout">Logout</a>
+</div>
+</body>
+</html>

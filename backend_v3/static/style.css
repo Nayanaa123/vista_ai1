@@ -1,0 +1,67 @@
+/* ---------------- Body & Layout ---------------- */
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#0b132b,#1c2541);
+    font-family:'Segoe UI',sans-serif;
+    color:white;
+}
+.card{
+    background: linear-gradient(145deg,#1c2541,#162447);
+    padding:50px;
+    border-radius:25px;
+    width:450px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.7);
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn{
+    from {opacity:0; transform: translateY(-20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* ---------------- Inputs & Buttons ---------------- */
+input, select, textarea{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+}
+button{
+    width:100%;
+    padding:15px;
+    background:#00f5d4;
+    color:black;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:16px;
+}
+button:hover{
+    background:#00bbf9;
+}
+
+/* ---------------- Links & Text ---------------- */
+a{
+    display:block;
+    margin-top:15px;
+    color:#00f5d4;
+    text-decoration:none;
+}
+h2{
+    margin-bottom:20px;
+    font-size:28px;
+}
+p{
+    color:#a8dadc;
+    text-align:left;
+    margin-top:20px;
+    font-size:16px;
+}
