@@ -162,7 +162,7 @@ Displays summarized output with download option
 ![Create](screenshots/create.png)
 
 ### Dashboard  
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboarrd.png)
 
 ### Summarization Page  
 ![Summarize](screenshots/summarise.png)
@@ -197,6 +197,3 @@ Vista AI provides an efficient solution for summarizing large content from multi
 
 
 
-- Your Name  
-- Member 2  
-- Member 3
