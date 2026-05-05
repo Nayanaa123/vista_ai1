@@ -156,19 +156,19 @@ Displays summarized output with download option
 ## Screenshots  
 
 ### Login Page  
-![Login](screenshots/profile.png)
+![Login](backend_v3/screenshots/profile.png)
 
 ### Registration Page  
-![Create](screenshots/create.png)
+![Create](backend_v3/screenshots/create.png)
 
 ### Dashboard  
-![Dashboard](screenshots/dashboarrd.png)
+![Dashboard](backend_v3/screenshots/dashboarrd.png)
 
 ### Summarization Page  
 ![Summarize](screenshots/summarise.png)
 
 ### Output Result  
-![Output](screenshots/output.png)
+![Output](backend_v3/screenshots/output.png)
 
 ---
 
